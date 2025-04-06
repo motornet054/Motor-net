@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101010;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-top: 30px;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #FFD700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #444;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.car-card {
+    background: linear-gradient(100deg, #421010, #000000);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.car-card h2 {
+    color: #e1b078;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.car-card p {
+    font-size: 1rem;
+    color: #CCCCCC;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.navigation a {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #FF0000;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.hero {
+    background: linear-gradient(100deg, #FF0000, #000000);
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 6em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: bold;
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+
+/* Botón de iniciar sesión */
+.login-button {
+    position: absolute;
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la parte derecha */
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #111; /* Fondo oscuro */
+    border: 2px solid #FF0000; /* Borde rojo */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5); /* Sombra */
+}
+
+.login-button:hover {
+    background-color: #FF0000; /* Fondo rojo al pasar el ratón */
+    color: #111; /* Texto oscuro */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.8); /* Sombra más pronunciada */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #111;
+    text-align: center;
+    padding: 30px 20px;
+    color: #fff;
+    font-size: 1em;
+}

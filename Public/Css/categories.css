@@ -1,0 +1,204 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #FF0000, #000000);
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: bold;
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.navigation a {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #FF0000;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #FF0000;
+    color: #111111;
+    transform: scale(1.1);
+}
+
+/* Home Section */
+.home {
+    background-color: #222;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home h2 {
+    font-size: 3em;
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* About Us Section */
+.about {
+    background-color: #333;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about h2 {
+    font-size: 3em;
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #ddd;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Categories Section */
+.categories {
+    background-color: #333;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 3em;
+    color: #FF0000;
+    margin-bottom: 40px;
+}
+
+.category {
+    background-color: #555;
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: left;
+}
+
+.category:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-5px);
+}
+
+.category h3 {
+    font-size: 2.5em;
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+
+.category p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #111;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact h2 {
+    font-size: 3em;
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    text-align: center;
+    padding: 30px 20px;
+    color: #fff;
+    font-size: 1em;
+}
+/* Category Link */
+.category-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.category-link:hover {
+    background-color: #411c1c;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* Botón de iniciar sesión */
+.login-button {
+    position: absolute;
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la parte derecha */
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #111; /* Fondo oscuro */
+    border: 2px solid #FF0000; /* Borde rojo */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5); /* Sombra */
+}
+
+.login-button:hover {
+    background-color: #FF0000; /* Fondo rojo al pasar el ratón */
+    color: #111; /* Texto oscuro */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.8); /* Sombra más pronunciada */
+}

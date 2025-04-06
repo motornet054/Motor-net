@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Public/Css/registrar.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1 class="login-title">Register</h1>
+        <form class="login-form" action="home.html" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Your password" required>
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+                <p id="strength-text">Security: -</p>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                <p id="match-text">Passwords should match</p>
+            </div>
+            <button type="submit" class="login-button" id="submit-btn" disabled>Sign in</button>
+        </form>
+        <p class="signup-link">Already have an account? <a href="sesion.html">Login</a></p>
+        <p class="signup-link">Need a password? <a href="password.html">Get a password here</a></p>
+    </div>
+
+    <script>
+        const passwordInput = document.getElementById("password");
+        const confirmPasswordInput = document.getElementById("confirm-password");
+        const progressBar = document.getElementById("progress");
+        const strengthText = document.getElementById("strength-text");
+        const matchText = document.getElementById("match-text");
+        const submitButton = document.getElementById("submit-btn");
+
+        function checkPasswordStrength(password) {
+            let strength = 0;
+
+            if (password.length >= 8) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[a-z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/\W/.test(password)) strength++;
+
+            let width = strength * 20;
+            progressBar.style.width = width + "%";
+
+            // Define password strength based on conditions
+            const strengthMessages = [
+                { color: "#ccc", text: "Security: Very weak ❌" },
+                { color: "red", text: "Security: Weak ⚠️" },
+                { color: "orange", text: "Security: Medium ⚠️" },
+                { color: "green", text: "Security: Strong ✅" },
+                { color: "darkgreen", text: "Security: Very strong 🔒" }
+            ];
+
+            const message = strengthMessages[strength];
+            progressBar.style.background = message.color;
+            strengthText.textContent = message.text;
+        }
+
+        function checkPasswordMatch() {
+            if (passwordInput.value === confirmPasswordInput.value && passwordInput.value !== "") {
+                matchText.style.color = "green";
+                matchText.textContent = "Passwords match ✅";
+                matchText.style.visibility = "visible";
+                submitButton.disabled = false;
+            } else {
+                matchText.style.color = "red";
+                matchText.textContent = "Passwords must match ❌";
+                matchText.style.visibility = "visible";
+                submitButton.disabled = true;
+            }
+        }
+
+        passwordInput.addEventListener("input", () => {
+            checkPasswordStrength(passwordInput.value);
+            checkPasswordMatch();
+        });
+
+        confirmPasswordInput.addEventListener("input", checkPasswordMatch);
+    </script>
+
+</body>
+</html>

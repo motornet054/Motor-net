@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #FF0000, #000000);
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #333;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 3em;
+    color: #FF0000;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #FF5C00;
+}
+
+.contact-form button {
+    padding: 15px 40px;
+    border-radius: 25px;
+    background-color: #FF0000;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #FF5C00;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    text-align: center;
+    padding: 30px 20px;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+.navigation a {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #FF0000;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #FF0000;
+    color: #111;
+    transform: scale(1.1);
+}
+/* Contact Form Styles */
+.contact-form {
+    margin-bottom: 20px; /* Añade espacio entre el formulario y la barra de navegación */
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #22222200;
+
+}
+/* Botón de iniciar sesión */
+.login-button {
+    position: absolute;
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la parte derecha */
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #111; /* Fondo oscuro */
+    border: 2px solid #FF0000; /* Borde rojo */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5); /* Sombra */
+}
+
+.login-button:hover {
+    background-color: #FF0000; /* Fondo rojo al pasar el ratón */
+    color: #111; /* Texto oscuro */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.8); /* Sombra más pronunciada */
+}
+
