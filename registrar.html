@@ -6,7 +6,15 @@
     <title>Register</title>
     <link rel="stylesheet" href="Public/Css/registrar.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3S48FK5PSB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-3S48FK5PSB');
+</script>
 <body>
     <div class="login-container">
         <h1 class="login-title">Register</h1>
@@ -28,7 +36,7 @@
                 <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
                 <p id="match-text">Passwords should match</p>
             </div>
-            <button type="submit" class="login-button" id="submit-btn" disabled>Sign in</button>
+            <button type="submit" class="login-button" id="submit-btn" disabled><a href="index.html">Sign up</a></button>
         </form>
         <p class="signup-link">Already have an account? <a href="sesion.html">Login</a></p>
         <p class="signup-link">Need a password? <a href="password.html">Get a password here</a></p>
